@@ -1,12 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family:Arial, Helvetica, sans-serif
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: #155324;
+  border-radius: 12px;
+  transition: all 1s ease;
 }
 
+::-webkit-scrollbar-thumb:hover {
+  background: #81b302;
+}
 section {
   position: relative;
   width: 100%;
@@ -44,6 +56,7 @@ header .navigation a {
   text-decoration: none;
   font-weight: 700;
   letter-spacing: 1px;
+  text-transform: uppercase;
   padding: 2px 15px;
   transition: 0.3s;
 }
@@ -160,12 +173,12 @@ header .navigation a:not(:last-child) {
   height: 41px;
   width: 41px;
 }
+
 #check {
   z-index: 3;
   display: none;
 }
 
-/* Responsive CSS */
 
 @media (max-width: 960px) {
   header .navigation {
@@ -297,7 +310,6 @@ header .navigation a:not(:last-child) {
     top: 50%;
     right: 0;
     width: 50px;
-    background: rgba(0, 0, 0, 0.2);
     transform: translateY(-50%);
     display: flex;
     justify-content: center;
